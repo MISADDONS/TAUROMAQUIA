@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="eS">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TAUROMAQUIA</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+<style>
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+  }
+
+  .card {
+    position: relative;
+    cursor: pointer;
+  }
+
+
+  .card img {
+    width: 100%;
+    display: block;
+    margin-left: 200px;
+    margin-bottom: 100px;
+    bottom: 0;
+    width: 200;
+
+  }
+
+
+
+
+  .hover-info {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    width: 100%;
+    padding: 10px;
+    opacity: 0;
+    transition: 0.3s;
+    margin-left: 180px;
+    margin-bottom: 100px;
+  }
+
+  .card:hover .hover-info {
+    opacity: 1;
+  }
+
+
+
+  #videoModal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    margin-left: 200;
+  }
+
+  #videoModal iframe {
+    width: 80vw;
+    height: 45vw;
+    margin-left: 200px;
+  }
+
+  #closeModal {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    margin-left: 200px;
+  }
+</style>
+</head>
+
+<body>
+
+
+  <div class="grid">
+
+
+    <div class="card">
+  <iframe src="https://drive.google.com/file/d/15Sw3ekjhskEXgyvtCZIz51kavmIjeshT/preview"
+    width="800" 
+    height="480" 
+    allow="autoplay" 
+    allowfullscreen>
+</iframe>
+
+      <a href="https://drive.google.com/file/d/15Sw3ekjhskEXgyvtCZIz51kavmIjeshT">
+        <img src="IMAGENES/CAPITULO 1.jpg"></a>
+
+      <div class=" hover-info">
+        <h3>Episodio 1</h3>
+        <p>Resumen corto del episodio.</p>
+      </div>
+    </div>
+  </div>
+  <div id="videoModal">
+    <div id="closeModal" onclick="closeVideo()">✖</div>
+    <iframe id="modalVideo" frameborder="0" allowfullscreen allow="autoplay"></iframe>
+  </div>
+
+  <div class="grid">
+
+<div class="card">
+      <iframe src="https://drive.google.com/file/d/1-k9JskgsZecl5BoSLu9k70kotckZqcoS/preview" width="800" height="480"
+        allow="autoplay" allowfullscreen>
+      </iframe>
+
+<a href="https://drive.google.com/file/d/1c15rrkretG0iyM9Sf8k_k2Ztg9M5UmkM"><img
+          src="IMAGENES/CAPITULO 2.jpg"></a>
+
+      <div class=" hover-info">
+        <h3>Episodio 2</h3>
+        <p>Resumen corto del episodio.</p>
+      </div>
+    </div>
+  </div>
+  <div id="videoModal">
+    <div id="closeModal" onclick="closeVideo()">✖</div>
+    <iframe id="modalVideo" frameborder="0" allowfullscreen allow="autoplay"></iframe>
+  </div>
+
+
+  <div class="grid">
+
+    <div class="card">
+      <iframe src="https://drive.google.com/file/d/1ZG_mM7X7QzLkYsLQ6hQo_H3UwXy3Dzwe/preview" width="800" height="480"
+        allow="autoplay" allowfullscreen>
+      </iframe>
+
+
+      <a href="https://drive.google.com/file/d/1ZG_mM7X7QzLkYsLQ6hQo_H3UwXy3Dzwe"><img
+          src="IMAGENES/CAPITULO 3.jpg"></a>
+
+      <div class=" hover-info">
+        <h3>Episodio 3</h3>
+        <p>Resumen corto del episodio.</p>
+      </div>
+    </div>
+  </div>
+  <div id="videoModal">
+    <div id="closeModal" onclick="closeVideo()">✖</div>
+    <iframe id="modalVideo" frameborder="0" allowfullscreen allow="autoplay"></iframe>
+  </div>
+
+
+
+  <div class="grid">
+
+    <div class="card">
+      <iframe src="https://drive.google.com/file/d/1-k9JskgsZecl5BoSLu9k70kotckZqcoS/preview" width="800" height="480"
+        allow="autoplay" allowfullscreen>
+      </iframe>
+
+
+      <a href=https://drive.google.com/file/d/1-k9JskgsZecl5BoSLu9k70kotckZqcoS><img src="IMAGENES/CAPITULO 4.jpg"></a>
+
+      <div class=" hover-info">
+        <h3>Episodio 4</h3>
+        <p>Resumen corto del episodio.</p>
+      </div>
+    </div>
+  </div>
+  <div id="videoModal">
+    <div id="closeModal" onclick="closeVideo()">✖</div>
+    <iframe id="modalVideo" frameborder="0" allowfullscreen allow="autoplay"></iframe>
+  </div>
+
+
+  <div class="grid">
+
+    <div class="card">
+      <iframe src="https://drive.google.com/file/d/1Z6EkCUUeDxOmOJJXfu_iltw1R42VOdaa/preview" width="800" height="480"
+        allow="autoplay" allowfullscreen>
+      </iframe>
+
+
+      <a href="https://drive.google.com/file/d/1Z6EkCUUeDxOmOJJXfu_iltw1R42VOdaa"><img
+          src="IMAGENES/CAPITULO 5.jpg"></a>
+
+      <div class=" hover-info">
+        <h3>Episodio 5</h3>
+        <p>Resumen corto del episodio.</p>
+      </div>
+    </div>
+  </div>
+  <div id="videoModal">
+    <div id="closeModal" onclick="closeVideo()">✖</div>
+    <iframe id="modalVideo" frameborder="0" allowfullscreen allow="autoplay"></iframe>
+  </div>
+
+  <div class="grid">
+
+    <div class="card">
+      <iframe src="https://drive.google.com/file/d/1CkfquB1e7WQpeiQ_B-wm4jvVaTPUcPd1/preview" width="800" height="480"
+        allow="autoplay" allowfullscreen>
+      </iframe>
+
+
+      <a href="https://drive.google.com/file/d/1CkfquB1e7WQpeiQ_B-wm4jvVaTPUcPd1"><img src="IMAGENES/CAPITULO 6.jpg"
+          width="200px"></a>
+
+      <div class=" hover-info">
+        <h3>Episodio 6</h3>
+        <p>Resumen corto del episodio.</p>
+      </div>
+    </div>
+  </div>
+  <div id="videoModal">
+    <div id="closeModal" onclick="closeVideo()">✖</div>
+    <iframe id="modalVideo" frameborder="0" allowfullscreen allow="autoplay"></iframe>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
+```
+
+
+<!--*Solo cambia*:
+- `"imagen.jpg"` por la ruta de tu imagen de capítulo.
+- `VIDEO_ID` por el ID de tu vídeo en YouTube o el enlace embebido de Google Drive.
+
+
+Cuando tengas la página lista, pásamela y te ayudo a ajustarla.
+
+¡Perfecto! Aquí tienes un ejemplo completo de una página HTML con *imagen que abre un modal*, muestra el vídeo con *autoplay*, y *se detiene al cerrar*:-->
+
+
+</body>
+
+</html>
